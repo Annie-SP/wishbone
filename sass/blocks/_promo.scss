@@ -1,0 +1,38 @@
+.promo {  
+    margin: 0 auto;
+    background: #ECE7E4;
+    &__block{         
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 720px;
+    } 
+    &__text{         
+        margin: 77px 30px; 
+        padding: 60px 40px 40px;
+    }
+    &__img{
+        background: url(../img/bg-1.png) center (center / cover) no-repeat;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+        color: $second-color;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__title{
+        margin-bottom: 18px;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 70px;
+    }
+    &__descr{
+        margin-bottom: 30px;
+        color: $third-color;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

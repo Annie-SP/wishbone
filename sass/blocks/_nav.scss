@@ -1,0 +1,20 @@
+.nav {
+    position: relative;
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    &__items{
+        margin-left: 16px;
+        margin-right: 16px;            
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    &__link{
+        text-decoration: none;
+        color: $main-color;
+    }
+}

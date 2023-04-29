@@ -1,0 +1,44 @@
+.projects{ 
+    &__wrapper{
+        min-height: 600px;
+        position: relative;
+        &_first{ 
+            background: url(../img/bg-2.jpg) center (center / cover) no-repeat;
+        }
+        &_second{
+            background: url(../img/bg-3.jpg) center (center / cover) no-repeat;
+        }
+        &_third{
+            background: url(../img/bg-4.jpg) center (center / cover) no-repeat;
+        }
+    }
+    &__subheader{
+        margin-bottom: 20px;
+        color: $second-color;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__descr{  
+        color: $third-color;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;  
+        &_right{
+            width: 300px;
+            position: absolute;
+            right: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &_left{
+            width: 300px;
+            position: absolute;
+            left: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

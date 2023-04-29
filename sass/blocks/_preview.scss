@@ -1,0 +1,60 @@
+.preview{
+    margin: 100px auto;  
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__block{
+        width: 502px;
+        margin-left: 133px;
+        margin-bottom: 20px;
+    }
+    &__title{
+        color: $third-color;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    &__descr{
+        color: $third-color;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    &__author{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        min-width: 280px;
+        height: 100px;        
+        &_photo{
+            padding: 8px 0;
+            width: 84px;
+            height: 84px;
+            img{
+                width: 100%;
+            }
+        }
+        &_name{      
+            display: block;         
+            position: absolute;
+            left: 104px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $main-color;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+            span{ 
+                display: block;            
+                color: $second-color;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+    }
+}

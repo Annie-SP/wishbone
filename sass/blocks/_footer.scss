@@ -1,0 +1,36 @@
+.footer{
+    padding: 60px 136px;
+    &__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__logo{
+        margin-bottom: 20px;
+        width: 256px;
+        height: 22px;
+        img{
+            width: 100%;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: $second-color;
+    }
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 112px;
+        &_link{
+            width: 25px;
+            height: 24px;
+        }
+    }
+}
+
+.bb{
+    border: 2px solid blue;
+}

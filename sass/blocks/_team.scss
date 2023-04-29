@@ -1,0 +1,34 @@
+.team{
+    &__block{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 16px;
+    }
+    &__report{
+        margin-right: 20px;
+    }
+    &__title{
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: $third-color;
+    }
+    &__descr{
+        margin-bottom: 30px;
+        margin-right: 16px;
+        width: 358px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: $second-color;
+    }
+
+    &__preview{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px,auto));
+        grid-template-rows: minmax(100px, auto);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 36px 100px;
+    }
+}

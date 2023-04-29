@@ -1,0 +1,45 @@
+.subtitle{
+    margin-bottom: 20px;
+    color: $second-color;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &_light{
+        color: #ECE7E4;
+    }
+
+}
+
+.titleh1{
+    color: $third-color;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    &_light{
+        color: #fff;
+    }
+}
+
+.title{
+    margin-bottom: 13px;
+    color: $main-color;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 42px;
+}
+
+.descr{
+    color: $third-color;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    &_light{        
+        font-size: 15px;
+        &-15{
+            color:#ECE7E4;
+        }
+    }
+
+}

@@ -1,0 +1,46 @@
+.clients{
+    padding: 60px 136px;
+    background-color: #403E3B;
+    &__block{        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    &__report{
+        padding: 65px 0;      
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+        color: $second-color;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color:#ECE7E4;
+    }
+    &__title{
+        color: $third-color;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: #fff;
+    }
+    &__descr{
+        margin-top: 14px;
+        color: $third-color;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+        color:#ECE7E4;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-end;
+        align-items: center;
+        gap: 96px;
+        padding: 40px;
+    }
+
+}
