@@ -1,0 +1,106 @@
+.projects_page{
+    background-color: #F7F7F7;
+    padding: 20px 120px 0 120px; 
+    
+    &__wrapper{
+        padding: 50px 16px;
+    }
+
+    &__title{
+        text-align: center;
+    }
+
+    &__list{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &__items{
+        position: relative;
+        overflow: hidden;
+        color: #F7F7F7;
+        min-height: 460px;
+        border-radius: 1rem;
+        max-width: 379px;
+        width: 100%;
+    }
+    &__card{
+        background: rgba(0,0,0,.8);
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        height: 60px;
+        transition: 1s;
+        padding-left: 15px;
+        &_title{
+            // color: $second-color;
+            // margin-top: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase; 
+
+        }
+        &_subtitle{
+            color:rgba(255,255,255,.8);
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 30px;
+        }
+        &_desc{
+            height: 70%;
+            overflow: hidden;
+            color:rgba(255,255,255,.6);
+            padding-top: 25px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+    &__card-body::before{
+        content: "View";
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 15%;
+        right: 0;
+        height: 70px;
+        padding: 0px 15px;
+        transition: 1s;
+        background-color: $second-color;
+        cursor: pointer;
+    }
+    
+    &__card:hover 
+    &__card-body::before{
+        content: "";
+        width: 100%;
+        background-color: transparent;
+    }
+    &__btn{
+        display: block;
+        width: 120px;
+        height: 40px;
+        margin-top: 20px;
+        background-color: $second-color;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    &__link{
+        color:rgba(255,255,255,.8);
+        text-decoration: none;
+
+    }
+
+    &__card:hover, 
+    &__card-body{
+        height: 60%;
+    }
+
+    
+}
