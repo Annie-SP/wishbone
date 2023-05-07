@@ -273,7 +273,7 @@
                         <p class="touch__subtitle">Get in touch</p>
                         <h2 class="touch__title">Think we would be a good fit for your next project?</h2>    
                     </div>
-                    <button class="button touch__button"> <a href="#popup1">Get in touch</a></button>
+                    <button class="button touch__button"> <a href="#popup-form">Get in touch</a></button>
                 </div>
             </div>
         </section> 
@@ -303,7 +303,16 @@
 
     </footer> 
 
-
+    <div class="popup-form overlay">
+        <form action="" method="get">
+            <label for="popup-name">Name:</label>
+            <input id="popup-name" type="text" name="popup-name" placeholder="Wish Piter">
+            <label for="popup-phone">Phone number:</label>
+            <input id="popup-phone" type="number" name="popup-phone" placeholder="0987654321">
+            <input type="submit" value="Send">
+        </form>
+        <a class="close" href="#">&times;</a>
+    </div>
 
     <script src="./js/script.js">
     </script>
