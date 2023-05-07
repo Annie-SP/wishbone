@@ -1680,6 +1680,7 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -2223,6 +2224,11 @@
   background-color: #F7F7F7;
   padding: 20px 120px 0 120px;
 }
+@media (max-width: 768px) {
+  .projects_page {
+    padding: 20px 10px;
+  }
+}
 .projects_page__wrapper {
   padding: 50px 16px;
 }
@@ -2233,9 +2239,14 @@
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  .projects_page__list {
+    gap: 20px;
+  }
 }
 .projects_page__items {
   position: relative;
@@ -2245,6 +2256,12 @@
   border-radius: 1rem;
   max-width: 379px;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .projects_page__items {
+    max-width: 330px;
+    width: 100%;
+  }
 }
 .projects_page__card {
   background: rgba(0, 0, 0, 0.8);
@@ -2317,8 +2334,23 @@
   background-color: #F7F7F7;
   padding: 20px 100px 0 100px;
 }
+@media (max-width: 1024px) {
+  .pages {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .pages {
+    padding: 20px 10px;
+  }
+}
 .pages__wrapper {
   padding: 80px 16px;
+}
+@media (max-width: 1024px) {
+  .pages__wrapper {
+    padding: 20px 10px;
+  }
 }
 .pages__title {
   margin-bottom: 15px;
@@ -2346,41 +2378,34 @@
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 .pages__block {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.pages__block-odd {
+  background-color: rgba(88, 85, 85, 0.137254902);
+  padding: 10px;
+}
+.pages__img {
+  max-width: 379px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .pages__img {
+    max-width: 330px;
+  }
 }
 .pages__descr {
-  padding-left: 80px;
-}
-
-.gallery {
-  margin: 0 auto;
-  width: 100%;
-  height: 400px;
-  overflow-x: scroll;
-  background-color: rgba(0, 0, 0, 0.19);
-  padding: 2%;
-  border-radius: 25px;
-  box-shadow: 0 4px 0 #474b4b, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.gallery__container {
-  display: flex;
-  flex-direction: row;
-}
-.gallery__img {
-  width: 300px;
-  height: 400px;
-  box-shadow: 0 0 15px black;
-  margin-right: 30px;
-}
-.gallery img {
-  width: 300px;
-  height: 400px;
+  text-align: justify;
 }
 
 @media (max-width: 1200px) {
@@ -2505,7 +2530,7 @@
     display: block;
     position: absolute;
     right: 20px;
-    top: -20px;
+    top: 0;
     transform: translateY(-50%);
     width: 28px;
     height: 18px;
