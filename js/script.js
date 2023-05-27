@@ -12,4 +12,17 @@ const hamburger = document.querySelector('.hamburger'),
         nav.classList.toggle('header__nav_active');
     });
 
+
+// const items = document.querySelectorAll('.item'),
+//         icon = document.querySelectorAll('.icon');
+
+//         icon.addEventListener('click', () => {
+//             icon.forEach.
+//             items.classList.add('open');
+//         }); 
+
+//         items.addEventListener('click', () => {
+//             items.classList.toggle('open');
+//         });
+
        
