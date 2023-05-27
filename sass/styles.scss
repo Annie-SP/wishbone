@@ -1,5 +1,5 @@
 //@import 'libs/bootstrap-reboot.min';
-@import 'libs/animate';
+// @import 'libs/animate';
 @import 'base/variables';
 
 * {
@@ -36,5 +36,7 @@
 @import 'blocks/pages';
 // @import 'blocks/gallery';   
 @import 'blocks/popup'; 
+
+@import 'blocks/accordion';
 
 @import 'blocks/media';
